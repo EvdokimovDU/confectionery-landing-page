@@ -28,7 +28,7 @@ html {
 }
 
 /* New Font Family Declarations */
-h1, h2, h3, .step h3 {
+h1, h2, h3, .step h3, .menu-item h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
@@ -43,7 +43,7 @@ body {
     color: var(--text-color);
     background-color: var(--white);
     line-height: 1.6;
-    font-size: 1.1rem; /* Base font size increased for better readability */
+    font-size: 1.15rem; /* Base font size increased for better readability */
 }
 
 .container {
