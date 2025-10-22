@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALENUSHKA — Торты и бенто ручной работы</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23D4A574'>🧁</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">ALENUSHKA</div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#gallery">Наши десерты</a></li>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#how-to-order">Как заказать</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">ALENUSHKA — торты и бенто, созданные с любовью</h1>
+            <p class="fade-in">Каждый десерт — маленькое произведение искусства. Индивидуальные заказы, нежный вкус и красивое оформление.</p>
+            <button class="cta-button fade-in" onclick="scrollToSection('how-to-order')">Сделать заказ</button>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/hero.jpg" alt="ALENUSHKA - торты и бенто">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-content fade-in-on-scroll">
+                <h2>Немного о ALENUSHKA</h2>
+                <p>Мы создаём десерты, которые радуют вкусом и выглядят как подарок. В каждом торте — внимание к деталям, настроение праздника и щепотка магии.</p>
+                <p><strong>ALENUSHKA — это не просто сладости, это способ сказать "с любовью".</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="fade-in-on-scroll">Наши десерты</h2>
+            <p class="gallery-subtitle fade-in-on-scroll">Все фотографии — реальные заказы наших клиентов 💛</p>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in-on-scroll">
+                    <img src="assets/images/gallery-1.jpg" alt="Бенто-торт Happy Birthday">
+                </div>
+                <div class="gallery-item fade-in-on-scroll">
+                    <img src="assets/images/gallery-2.jpg" alt="Бенто-торт Признание в любви">
+                </div>
+                <div class="gallery-item fade-in-on-scroll">
+                    <img src="assets/images/gallery-3.jpg" alt="Бенто-торт с флажками">
+                </div>
+                <div class="gallery-item fade-in-on-scroll">
+                    <img src="assets/images/gallery-4.jpg" alt="Бенто-торт с пчелками">
+                </div>
+                <div class="gallery-item fade-in-on-scroll">
+                    <img src="assets/images/gallery-5.jpg" alt="Бенто-торт Буду любить вечно">
+                </div>
+                <div class="gallery-item fade-in-on-scroll">
+                    <img src="assets/images/gallery-6.jpg" alt="Pastel Bento Cakes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="fade-in-on-scroll">Что можно заказать</h2>
+            <p class="menu-subtitle fade-in-on-scroll">Выбирайте формат и вкус, остальное мы сделаем красиво!</p>
+            <div class="menu-grid">
+                <div class="menu-item fade-in-on-scroll">
+                    <div class="menu-icon">🧁</div>
+                    <h3>Бенто-торт</h3>
+                    <p>1–2 персоны</p>
+                    <p class="price">от 1 200 ₽</p>
+                </div>
+                <div class="menu-item fade-in-on-scroll">
+                    <div class="menu-icon">🎂</div>
+                    <h3>Классический торт</h3>
+                    <p>6–8 персон</p>
+                    <p class="price">от 3 000 ₽</p>
+                </div>
+                <div class="menu-item fade-in-on-scroll">
+                    <div class="menu-icon">✨</div>
+                    <h3>Индивидуальное оформление</h3>
+                    <p>По договорённости</p>
+                    <p class="price">Уточните цену</p>
+                </div>
+                <div class="menu-item fade-in-on-scroll">
+                    <div class="menu-icon">🌸</div>
+                    <h3>Дополнительно</h3>
+                    <p>Надписи, фигурки, цветы</p>
+                    <p class="price">По запросу</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Order Section -->
+    <section class="how-to-order" id="how-to-order">
+        <div class="container">
+            <h2 class="fade-in-on-scroll">Как оформить заказ</h2>
+            <div class="steps-grid">
+                <div class="step fade-in-on-scroll">
+                    <div class="step-number">1</div>
+                    <h3>Напишите нам</h3>
+                    <p>Свяжитесь с нами в Direct или WhatsApp</p>
+                </div>
+                <div class="step fade-in-on-scroll">
+                    <div class="step-number">2</div>
+                    <h3>Расскажите о заказе</h3>
+                    <p>Какой торт хотите: вкус, оформление, дата</p>
+                </div>
+                <div class="step fade-in-on-scroll">
+                    <div class="step-number">3</div>
+                    <h3>Подтверждение</h3>
+                    <p>Мы подтвердим заказ и обсудим детали</p>
+                </div>
+                <div class="step fade-in-on-scroll">
+                    <div class="step-number">4</div>
+                    <h3>Предоплата</h3>
+                    <p>Внесите предоплату и ждите сладкий шедевр 💛</p>
+                </div>
+            </div>
+            <div class="cta-buttons fade-in-on-scroll">
+                <a href="https://www.instagram.com/direct/t/go__alyona" target="_blank" class="cta-button instagram">Написать в Instagram</a>
+                <a href="https://wa.me/?text=Привет%20ALENUSHKA!%20Хочу%20заказать%20торт" target="_blank" class="cta-button whatsapp">Написать в WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="fade-in-on-scroll">Ваши впечатления</h2>
+            <div class="reviews-grid">
+                <div class="review-card fade-in-on-scroll">
+                    <div class="review-text">
+                        "Спасибо за бенто! Он был не только красивый, но и невероятно вкусный 💕"
+                    </div>
+                    <div class="review-author">— Анна</div>
+                </div>
+                <div class="review-card fade-in-on-scroll">
+                    <div class="review-text">
+                        "Заказывали торт на день рождения — все гости в восторге! Теперь только ALENUSHKA."
+                    </div>
+                    <div class="review-author">— Мария и семья</div>
+                </div>
+                <div class="review-card fade-in-on-scroll">
+                    <div class="review-text">
+                        "Прекрасное качество, внимательное отношение к деталям и очень вкусно. Рекомендую!"
+                    </div>
+                    <div class="review-author">— Елена</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="fade-in-on-scroll">Давайте создадим ваш торт</h2>
+            <p class="contacts-subtitle fade-in-on-scroll">Свяжитесь с нами любым удобным способом — мы поможем придумать идеальный десерт под ваш праздник.</p>
+            <div class="contact-links fade-in-on-scroll">
+                <a href="https://www.instagram.com/go__alyona" target="_blank" class="contact-link">
+                    <span class="contact-icon">📱</span>
+                    <span>Instagram: @go__alyona</span>
+                </a>
+                <a href="https://wa.me/?text=Привет%20ALENUSHKA!%20Хочу%20заказать%20торт" target="_blank" class="contact-link">
+                    <span class="contact-icon">💬</span>
+                    <span>WhatsApp: +7 (XXX) XXX-XX-XX</span>
+                </a>
+                <a href="https://t.me/go_alyona" target="_blank" class="contact-link">
+                    <span class="contact-icon">✈️</span>
+                    <span>Telegram: @go_alyona</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 ALENUSHKA — все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
