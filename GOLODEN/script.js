@@ -1,5 +1,5 @@
 // ============================================
-// ALЁNUSHKA_DESSERTS Landing Page - JavaScript
+// Alёnushka Landing Page - JavaScript
 // ============================================
 
 // Mobile Menu Toggle
@@ -124,7 +124,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Log page load
-console.log('🧁 ALЁNUSHKA_DESSERTS Landing Page Loaded Successfully!');
+console.log('🧁 Alёnushka Landing Page Loaded Successfully!');
 
 
 
