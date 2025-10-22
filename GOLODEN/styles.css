@@ -1,5 +1,5 @@
 /* ============================================
-   ALENUSHKA Landing Page - Styles
+   ALЁNUSHKA_DESSERTS Landing Page - Styles
    ============================================ */
 
 /* Root Variables */
@@ -656,5 +656,39 @@ section h2 {
         padding: 1rem;
         font-size: 0.9rem;
     }
+}
+
+
+
+/* ============================================
+   BENTO SLIDESHOW STYLES
+   ============================================ */
+
+.bento-slideshow {
+    position: relative;
+    width: 100%;
+    height: 150px; /* Fixed height for consistency */
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bento-slideshow .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.bento-slideshow .slide.active {
+    opacity: 1;
+}
+
+.menu-item .menu-icon {
+    display: none; /* Hide the default icon for the slideshow item */
 }
 

@@ -1,5 +1,5 @@
 // ============================================
-// ALENUSHKA Landing Page - JavaScript
+// ALЁNUSHKA_DESSERTS Landing Page - JavaScript
 // ============================================
 
 // Mobile Menu Toggle
@@ -124,5 +124,36 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Log page load
-console.log('🧁 ALENUSHKA Landing Page Loaded Successfully!');
+console.log('🧁 ALЁNUSHKA_DESSERTS Landing Page Loaded Successfully!');
+
+
+
+// ============================================
+// Bento Slideshow Logic
+// ============================================
+
+function startBentoSlideshow() {
+    const slideshowContainer = document.getElementById('bentoSlideshow');
+    if (!slideshowContainer) return;
+
+    const slides = slideshowContainer.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function nextSlide() {
+        // Hide current slide
+        slides[currentSlide].classList.remove('active');
+        
+        // Calculate next slide index
+        currentSlide = (currentSlide + 1) % slides.length;
+        
+        // Show next slide
+        slides[currentSlide].classList.add('active');
+    }
+
+    // Start the slideshow, changing every 3 seconds
+    setInterval(nextSlide, 3000);
+}
+
+// Start the slideshow when the page loads
+document.addEventListener('DOMContentLoaded', startBentoSlideshow);
 
