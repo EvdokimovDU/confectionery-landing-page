@@ -132,12 +132,20 @@ console.log('🧁 Alёnushka Landing Page Loaded Successfully!');
 // Bento Slideshow Logic
 // ============================================
 
-function startBentoSlideshow() {
-    const slideshowContainer = document.getElementById('bentoSlideshow');
+function startSlideshow(containerId) {
+    const slideshowContainer = document.getElementById(containerId);
     if (!slideshowContainer) return;
 
     const slides = slideshowContainer.querySelectorAll('.slide');
     let currentSlide = 0;
+
+    // Ensure only the first slide is active initially
+    slides.forEach((slide, index) => {
+        slide.classList.remove('active');
+        if (index === 0) {
+            slide.classList.add('active');
+        }
+    });
 
     function nextSlide() {
         // Hide current slide
@@ -154,6 +162,9 @@ function startBentoSlideshow() {
     setInterval(nextSlide, 3000);
 }
 
-// Start the slideshow when the page loads
-document.addEventListener('DOMContentLoaded', startBentoSlideshow);
+// Start both slideshows when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    startSlideshow('bentoSlideshow');
+    startSlideshow('classicSlideshow');
+});
 
